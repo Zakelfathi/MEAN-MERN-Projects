@@ -1,0 +1,153 @@
+[
+  {
+    "name": "chaise marocaine",
+    "price": 600,
+    "company": "ArtisanatMarrakech",
+    "rating": 4.5,
+    "image":"./images/1.jpg"
+  },
+  {
+    "name": "canapé casablanca",
+    "price": 2500,
+    "company": "MeublesRabat",
+    "rating": 4.8,
+    "image":"./images/1.jpg"
+  },
+  {
+    "name": "table médina",
+    "price": 1200,
+    "company": "ArtisanatFes",
+    "rating": 4.7,
+    "image":"./images/1.jpg"
+  },
+  {
+    "name": "fauteuil tanger",
+    "price": 800,
+    "company": "MeublesTanger",
+    "rating": 4.2,
+    "image":"./images/1.jpg"
+  },
+  {
+    "name": "tabouret marrakech",
+    "price": 200,
+    "company": "ArtisanatMarrakech",
+    "rating": 4.6,
+    "image":"./images/1.jpg"
+  },
+  {
+    "name": "table à manger atlas",
+    "price": 300,
+    "company": "MeublesRabat",
+    "rating": 4.55,
+    "image":"./images/1.jpg"
+  },
+  {
+    "name": "lit méditerranée",
+    "price": 700,
+    "company": "MeublesCasablanca",
+    "image":"./images/1.jpg"
+  },
+  {
+    "name": "meuble TV oujda",
+    "price": 450,
+    "featured": true,
+    "company": "ArtisanatOujda",
+    "image":"./images/1.jpg"
+  },
+  {
+    "name": "banc haut fès",
+    "price": 350,
+    "featured": true,
+    "company": "MeublesFes",
+    "image":"./images/1.jpg"
+  },
+  {
+    "name": "canapé en cuir marron",
+    "price": 1500,
+    "company": "ArtisanatMarrakech",
+    "image":"./images/1.jpg"
+  },
+  {
+    "name": "étagère moderne marocaine",
+    "price": 500,
+    "featured": true,
+    "company": "MeublesCasablanca",
+    "image":"./images/1.jpg"
+  },
+  {
+    "name": "affiche artisanale",
+    "price": 200,
+    "company": "ArtisanatTanger",
+    "image":"./images/1.jpg"
+  },
+  {
+    "name": "étagère marrakech",
+    "price": 250,
+    "company": "ArtisanatMarrakech",
+    "image":"./images/1.jpg"
+  },
+  {
+    "name": "chaise simple rabat",
+    "price": 450,
+    "company": "MeublesRabat",
+    "image":"./images/1.jpg"
+  },
+  {
+    "name": "ensemble salon atlas",
+    "price": 900,
+    "company": "MeublesTanger",
+    "image":"./images/1.jpg"
+  },
+  {
+    "name": "fauteuil en cuir beige",
+    "price": 120,
+    "company": "ArtisanatCasablanca",
+    "image":"./images/1.jpg"
+  },
+  {
+    "name": "canapé utopia",
+    "price": 600,
+    "featured": true,
+    "company": "MeublesCasablanca",
+    "image":"./images/1.jpg"
+  },
+  {
+    "name": "table vase marron",
+    "price": 800,
+    "featured": true,
+    "company": "ArtisanatMarrakech",
+    "image":"./images/1.jpg"
+  },
+  {
+    "name": "lit en bois sculpté",
+    "price": 600,
+    "company": "MeublesRabat",
+    "image":"./images/1.jpg"
+  },
+  {
+    "name": "bureau marocain en bois",
+    "price": 300,
+    "company": "MeublesRabat",
+    "image":"./images/1.jpg"
+  },
+  {
+    "name": "bureau marocain en bois",
+    "price": 400,
+    "company": "MeublesRabat",
+    "image":"./images/1.jpg"
+  },
+  {
+    "name": "table artisanale en bois",
+    "price": 250,
+    "featured": true,
+    "company": "ArtisanatFes",
+    "image":"./images/1.jpg"
+  },
+  {
+    "name": "première table marocaine en bois",
+    "price": 250,
+    "featured": true,
+    "company": "ArtisanatFes",
+    "image":"./images/1.jpg"
+  }
+]

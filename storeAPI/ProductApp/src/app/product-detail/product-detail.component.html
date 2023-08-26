@@ -1,0 +1,11 @@
+<div class="product-detail">
+  <div *ngIf="product">
+    <h2>{{ product.name }}</h2>
+    <img src="../../assets/{{ product.image }}" alt="{{ product.name }}" class="img-fluid">
+    <p>Price: ${{ product.price }}</p>
+    <p>Company: {{ product.company }}</p>
+    <p>Rating: {{ product.rating }}</p>
+    <p>Featured: {{ product.featured ? 'Yes' : 'No' }}</p>
+    <p>Created At: {{ product.createdAt | date }}</p>
+  </div>
+</div>
