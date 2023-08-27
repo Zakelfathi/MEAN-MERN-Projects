@@ -30,6 +30,6 @@ Ensure both the backend and frontend are up and running for the complete functio
 If you'd like to contribute to the project, feel free to fork the respective repositories, make your changes, and submit pull requests. Be sure to follow best practices and maintain code quality.
 
 ## Contact
-If you have any questions, issues, or suggestions, you can contact the project maintainers at your-email@example.com.
+If you have any questions, issues, or suggestions, you can contact me : zakelfathi@gmail.com
 
 Thank you for using the jobsAPI project! We hope this project helps you effectively manage job-related information with ease.
