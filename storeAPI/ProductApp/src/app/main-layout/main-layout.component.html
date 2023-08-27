@@ -1,0 +1,28 @@
+<!-- Navbar -->
+<nav class="container navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">StoreAPI</a>
+  <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <ol>home</ol>
+      <ol>Trending</ol>
+      <ol>For you</ol>
+      <ol>Men</ol>
+      <ol>Women</ol>
+    </ul>
+    <form class="form-inline my-2 my-lg-0" (ngSubmit)="searchProducts(searchTerm)">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"
+        [(ngModel)]="searchTerm" name="searchTerm">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
+
+<!-- Product Detail Section -->
+<app-product-detail *ngIf="selectedProductId"></app-product-detail>
+
+<!-- Footer -->
+<footer class="bg-light text-center py-3">
+  <p>&copy; 2023 StoreAPI All rights reserved.</p>
+</footer>

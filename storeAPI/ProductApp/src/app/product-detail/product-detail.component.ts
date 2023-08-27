@@ -18,10 +18,8 @@ export class ProductDetailComponent implements OnInit {
   ngOnInit(): void {
     this.route.paramMap.subscribe((params) => {
       const productId = params.get('id');
-      console.log('Product ID:', productId); // Check if you're getting the correct ID
       if (productId !== null) {
         this.productService.getProductById(productId).subscribe((data) => {
-          console.log('Product Data:', data); // Check if you're getting the product data
           this.product = data;
         });
       }

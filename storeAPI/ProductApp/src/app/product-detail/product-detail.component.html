@@ -1,11 +1,26 @@
-<div class="product-detail">
-  <div *ngIf="product">
-    <h2>{{ product.name }}</h2>
-    <img src="../../assets/{{ product.image }}" alt="{{ product.name }}" class="img-fluid">
-    <p>Price: ${{ product.price }}</p>
-    <p>Company: {{ product.company }}</p>
-    <p>Rating: {{ product.rating }}</p>
-    <p>Featured: {{ product.featured ? 'Yes' : 'No' }}</p>
-    <p>Created At: {{ product.createdAt | date }}</p>
+<div *ngIf="product" class="container product-detail">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="../../assets/{{ product.image }}" alt="{{ product.name }}" class="img-fluid product-image">
+    </div>
+    <div class="col-md-6">
+      <h2 class="product-name">{{ product.name }}</h2>
+      <p class="product-price">Price: ${{ product.price }}</p>
+      <div class="product-rating">
+        <div class="stars">
+          <ng-container *ngFor="let _ of [1, 2, 3, 4, 5]">
+            <span class="star-filled"><i class="fas fa-star"></i></span>
+          </ng-container>
+          <ng-container *ngFor="let _ of [1, 2, 3, 4, 5 - product.rating]">
+            <span class="star-empty"><i class="far fa-star"></i></span>
+          </ng-container>
+        </div>
+        <p class="rating-text">{{ product.rating }} / 5</p>
+      </div>
+      <div class="product-company">
+        Company: {{ product.company }}
+        <br>Date: {{ product.createdAt | date: 'medium' }}
+      </div>
+    </div>
   </div>
 </div>

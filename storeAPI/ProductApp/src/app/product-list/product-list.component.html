@@ -9,17 +9,17 @@
           <h3 class="card-title">{{ product.name }}</h3>
           <p class="card-text">Price: ${{ product.price }}</p>
           <button class="btn btn-primary" [routerLink]="['/product', product._id]">Details</button>
+
         </div>
       </div>
     </div>
   </div>
-</div>
-
-<div class="container">
   <div class="row">
+    <!-- Pagination Controls -->
     <div class="col">
-      <pagination-controls id="products-pagination" (pageChange)="onPageChange($event)"
-        class="pagination-sm"></pagination-controls>
+      <pagination-controls (pageChange)="onPageChange($event)" id="products-pagination" class="pagination-sm">
+      </pagination-controls>
+
     </div>
   </div>
 </div>

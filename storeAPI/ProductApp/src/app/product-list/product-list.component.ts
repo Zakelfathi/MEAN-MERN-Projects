@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 import { ProductService } from '../services/product.service';
 
 @Component({
@@ -8,35 +7,30 @@ import { ProductService } from '../services/product.service';
   styleUrls: ['./product-list.component.css'],
 })
 export class ProductListComponent implements OnInit {
-  products!: any[];
-  currentPage: number = 1;
-  itemsPerPage: number = 6; // Adjust the number of items per page
+  products: any[] = [];
+  selectedProductId: string | null = null;
+
+  // Define properties for pagination
+  itemsPerPage: number = 10; // Set the number of items per page
+  currentPage: number = 1; // Initialize the current page
 
   constructor(private productService: ProductService) {}
 
   ngOnInit(): void {
+    this.fetchProducts();
+  }
+
+  fetchProducts(): void {
     this.productService.getProducts().subscribe((data) => {
       this.products = data.products;
     });
   }
-
-  getStars(rating: number): any[] {
-    const stars = [];
-    const roundedRating = Math.round(rating);
-    for (let i = 0; i < roundedRating; i++) {
-      stars.push(i);
-    }
-    return stars;
+  onPageChange(newPageNumber: number): void {
+    this.currentPage = newPageNumber;
+    this.fetchProducts(); // Fetch new data for the updated page
   }
 
-  getPageNumbers(): number[] {
-    const pageCount = Math.ceil(
-      (this.products?.length || 0) / this.itemsPerPage
-    );
-    return Array.from({ length: pageCount }, (_, index) => index + 1);
-  }
-
-  onPageChange(page: number): void {
-    this.currentPage = page;
+  showProductDetail(productId: string): void {
+    this.selectedProductId = productId;
   }
 }

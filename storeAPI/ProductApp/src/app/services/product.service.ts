@@ -13,7 +13,10 @@ export class ProductService {
   getProducts(): Observable<any> {
     return this.http.get(this.baseUrl);
   }
-
+  // Inside ProductService class
+  searchProductsByName(searchTerm: string): Observable<any> {
+    return this.http.get(`${this.baseUrl}/search?name=${searchTerm}`);
+  }
   // Define the getProductById method
   getProductById(id: string): Observable<any> {
     return this.http.get(`${this.baseUrl}/${id}`);

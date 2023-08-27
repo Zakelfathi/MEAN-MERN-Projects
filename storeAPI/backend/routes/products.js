@@ -1,12 +1,16 @@
-const express = require('express')
-const router = express.Router()
+const express = require("express");
+const router = express.Router();
 
 const {
   getAllProducts,
   getAllProductsStatic,
-} = require('../controllers/products')
+  getProductById,
+} = require("../controllers/products");
 
-router.route('/').get(getAllProducts)
-router.route('/static').get(getAllProductsStatic)
+router.route("/").get(getAllProducts);
+router.route("/static").get(getAllProductsStatic);
 
-module.exports = router
+// New route to get a product by ID
+router.route("/:id").get(getProductById);
+
+module.exports = router;
