@@ -1,0 +1,490 @@
+// /* Header */
+// .app-header {
+// 	@include box-shadow(0 1px 4px 0 rgba(0,0,0,.1));
+// 	border-bottom: 1px solid $theme-border-color;
+// 	height: 56px;
+// 	background: #fff;
+// }
+
+// .app-header-inner {
+// 	position: relative;
+// }
+
+
+// .app-search-form {
+//     position: relative;
+//     max-width: 600px;
+
+// 	.search-input {
+// 		font-size: 0.875rem;
+// 		@include border-radius(0.25rem);
+// 		padding-right: 3rem;
+// 		padding-left: 1rem;
+
+// 		&:focus {
+// 			border-color: $theme-border-color;
+// 		}
+// 	}
+// 	.search-btn {
+// 		color: lighten($theme-text-color-secondary, 15%);
+// 		background: none;
+// 		border: none;
+// 		position: absolute;
+// 		right: 0;
+// 		top: 0;
+// 		margin-right: 0;
+// 		padding: 0.5rem 1rem;
+
+
+
+// 		&:active, &:focus, &:hover {
+// 			outline: none !important;
+// 			color: $theme-color-primary;
+// 			@include box-shadow(none);
+
+// 		}
+
+// 	}
+// }
+
+// .app-utility-item {
+// 	display: inline-block;
+// 	margin-right: 1.25rem;
+// 	&:last-child {
+// 		margin-right: 0;
+// 	}
+// 	& > a {
+// 		color: $theme-text-color-secondary;
+// 		&:hover {
+// 			color: $theme-text-color-primary;
+// 		}
+// 	}
+// 	.dropdown-toggle {
+// 		position: relative;
+// 	}
+// 	.dropdown-menu {
+// 		font-size: 0.875rem;
+// 		margin: 0;
+// 	}
+// 	.dropdown-menu.show {
+// 		top: 23px !important;
+// 	}
+// 	.icon {
+// 		font-size: 1.25rem;
+// 		width: 24px;
+// 		height: 24px;
+// 	}
+// 	.icon-badge {
+// 		display: inline-block;
+// 		@include border-radius(50%);
+// 		position: absolute;
+// 		right: -0.45rem;
+// 		top: -0.3rem;
+// 		width: 20px;
+// 		height: 20px;
+// 		font-size: 0.6rem;
+// 		font-weight: bold;
+// 		padding-top: 1px;
+// 		color: #fff;
+// 		text-align: center;
+// 		&.icon-badge {
+// 			background: $theme-color-count;
+// 			border: 2px solid #fff;
+// 		}
+// 	}
+// }
+
+// .app-notifications-dropdown {
+
+// 	.dropdown-menu {
+// 		width: 300px;
+// 		.dropdown-menu-header {
+// 			border-bottom: 1px solid $theme-border-color;
+// 		}
+// 		.dropdown-menu-title {
+// 			font-size: 1rem;
+// 		}
+// 		.profile-image {
+// 			width: 36px;
+// 			height: 36px;
+// 		}
+// 		.info {
+// 			padding-right: 80px;
+// 			position: relative;
+// 		}
+// 		.meta {
+// 			color: $theme-text-color-light;
+// 			position: absolute;
+// 			right: 0;
+// 			top:0;
+// 			font-size: 0.75rem;
+
+// 		}
+// 		.dropdown-menu-footer {
+// 			border-top: 1px solid $theme-border-color;
+// 		}
+
+// 		.item {
+// 			min-width: 250px;
+// 			position: relative;
+// 			border-bottom: 1px solid $theme-border-color;
+// 			&:last-child {
+// 				border-bottom: none;
+// 			}
+// 			&:hover {
+// 				background: $smoky-white;
+// 			}
+// 		}
+
+// 		.link-mask {
+// 			position: absolute;
+// 			width: 100%;
+// 			height: 100%;
+// 			display: block;
+// 			left: 0;
+// 			top: 0;
+// 		}
+// 	}
+
+// 	.app-icon-holder {
+// 		display: inline-block;
+// 		background: lighten($theme-color-primary, 60%);
+// 		color: $theme-color-primary;
+// 		width: 36px;
+// 	    height: 36px;
+// 		padding-top: 4px;
+// 		font-size: 1rem;
+// 		text-align: center;
+// 		@include border-radius(50%);
+
+// 		&.icon-holder-mono {
+// 			background: $theme-bg-light;
+// 			color: $theme-text-color-light;
+// 		}
+
+// 		svg {
+// 			width: 20px;
+// 			height: 20px;
+// 		}
+// 	}
+// }
+
+// .app-user-dropdown {
+//     display: inline-block;
+//     a {
+
+//     }
+// 	img {
+// 		width: 36px;
+// 		height: 36px;
+// 	}
+// }
+// // Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) {
+//     .app-notifications-dropdown .dropdown-menu {
+// 	    width: 400px;
+//     }
+
+// }
+
+
+// // X-Large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) {
+// 	.app-header-inner {
+// 		margin-left: 250px; //side panel width;
+// 	}
+// }
+
+
+// // X-Small devices (portrait phones, less than 576px)
+// @media (max-width: 575.98px) {
+// 	.search-mobile-trigger {
+// 		cursor: pointer;
+// 		@include opacity(0.8);
+// 		&:hover {
+// 			color: $theme-color-primary;
+// 			@include opacity(1);
+// 		}
+
+// 	}
+// 	.app-search-box {
+// 		display: none;
+// 		position: absolute;
+// 	    left: 0;
+// 	    top: 56px;
+// 	    padding: 0;
+// 	    height: 100vh;
+// 	    background: rgba(0, 0, 0, 0.5);
+// 	    @include transition (all 0.4s ease-in-out);
+// 	    .app-search-form {
+// 		    .search-input {
+// 			    @include border-radius(0);
+// 			    padding-top: 1.5rem;
+// 			    padding-bottom: 1.5rem;
+// 		    }
+// 		    .search-btn {
+// 			    top: 7px;
+// 		    }
+
+// 	    }
+
+// 	    &.is-visible {
+// 		    display: block;
+// 	    }
+// 	}
+// }
+// .app-sidepanel {
+// 	position: fixed;
+// 	min-height: 100vh;
+// 	height: 100%;
+// 	left: 0;
+// 	top: 0;
+// 	font-size: 0.875rem;
+// 	border-right: 1px solid $theme-border-color;
+// 	.panel-drop {
+// 		display: none;
+// 	}
+// 	.sidepanel-inner {
+// 		position: relative;
+// 		z-index: 10;
+// 		background: #fff;
+// 		@include box-shadow(rgba(0, 0, 0, 0.05) 0px 8px 15px);
+// 		width: 250px;
+// 	    height: 100%;
+
+// 	}
+
+// 	.sidepanel-close {
+// 		display: none;
+// 		position: absolute;
+// 	    z-index: 20;
+// 	    right: -2rem;
+// 	    top: 0;
+// 	    color: #fff;
+// 	    font-size: 2rem;
+// 	}
+
+// 	&.sidepanel-hidden {
+// 		left: -400px; //value >= 250px (sidepanel width + close button width)
+
+// 	}
+// 	&.sidepanel-visible{
+// 		left: 0;
+// 	}
+
+// 	.app-nav-main {
+// 		overflow-y: auto;
+// 		/* Forefox scrollbar */
+// 		scrollbar-color: rgba(0, 0, 0, 0.1) $theme-border-color;
+// 	    scrollbar-width: thin;
+
+// 	    /* Chrome webkit scrollbar */
+
+// 		&::-webkit-scrollbar {
+// 		    width: 6px;
+// 		    background-color: $theme-border-color;
+// 		}
+
+// 		&::-webkit-scrollbar-thumb {
+// 		    background-color: rgba(0, 0, 0, 0.1);
+// 		    @include border-radius(0.5rem);
+// 		}
+// 	}
+// }
+
+
+
+// .app-branding{
+// 	height: 60px; //same as .app-header
+// 	padding-top: 1rem;
+// 	padding-left: 1rem;
+// 	margin-bottom: 1rem;
+
+// 	.logo-icon {
+// 		width: 36px;
+// 	    height: 36px;
+// 	}
+
+//     .logo-text {
+// 	    color: $theme-text-color-primary;
+// 	    font-size: 1.25rem;
+// 	    font-weight: 600;
+// 	    vertical-align: middle;
+//     }
+// }
+
+// .app-nav {
+// 	color: $theme-text-color-secondary;
+// 	display: block;
+// 	padding: 0;
+// 	width: 100%;
+// 	.app-menu {
+// 		margin-bottom: 0;
+// 	}
+// 	.nav-item {
+// 		display: block;
+// 		color: $theme-text-color-secondary;
+// 		background: #fff;
+// 	}
+// 	.nav-link {
+// 		display: block;
+// 		padding: 0.875rem 1rem;
+// 		color: $theme-text-color-primary;
+// 		position: relative;
+// 		display: block;
+// 		padding-left: 3rem;
+// 		border-left: 3px solid transparent;
+// 		&.active {
+
+// 			color: $theme-color-primary;
+// 			background: lighten($theme-color-primary, 60%);
+// 			border-left: 3px solid $theme-color-primary;
+// 			font-weight: 500;
+
+// 		}
+
+// 	    &.submenu-toggle.active {
+// 		    background: none;
+// 		    border-color: transparent;
+// 	    }
+
+
+// 		&:hover {
+// 			color: $theme-color-primary;
+// 		}
+// 	}
+// 	.nav-icon {
+// 		position: absolute;
+// 		left: 1rem;
+// 		top: 0.7rem;
+// 		.bi {
+// 			width: 1.25rem;
+// 			height: 1.25rem;
+// 		}
+// 	}
+
+// 	.submenu-arrow {
+// 		position: absolute;
+// 		right: 1rem;
+// 		top: 0.7rem;
+// 		color: $theme-text-color-light;
+// 		svg {
+// 			width: 14px;
+// 		    height: 14px;
+
+// 		}
+
+// 	}
+
+// 	.submenu-toggle {
+
+// 		@include transition (all 0.4s ease-in-out);
+// 		&[aria-expanded="true"] {
+
+
+// 			.submenu-arrow {
+// 				color: $theme-text-color-primary;
+// 				svg {
+// 					-ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+// 					transform: rotate(180deg);
+// 	                -webkit-transform: rotate(180deg);
+// 				}
+// 			}
+
+// 		}
+// 	}
+
+// 	.submenu {
+
+// 	}
+
+// 	.submenu-item {
+// 		margin-bottom: 0;
+
+// 	}
+
+// 	.submenu-link {
+
+// 		color: $theme-text-color-secondary;
+// 		font-size: 0.875rem;
+// 		margin-left: 2rem;
+// 		padding: 0.5rem 1rem;
+// 		padding-left: 1rem;
+// 	    position: relative;
+// 	    display: block;
+// 	    margin-bottom: 0;
+
+// 		&:before {
+// 			background-color: $theme-border-color;
+// 		    content: " ";
+// 		    display: inline-block;
+// 		    height: inherit;
+// 		    left: 0;
+// 		    position: absolute;
+// 		    width: 2px;
+// 		    height: 100%;
+// 		    margin-top: -0.5rem;
+// 		}
+
+// 		&:hover {
+// 			color: $theme-text-color-primary;
+// 		}
+
+// 		&.active {
+// 			color: $theme-color-primary;
+// 			&:before {
+// 				background-color: $theme-color-primary;
+// 			}
+// 		}
+
+// 	}
+// }
+
+// .app-sidepanel-footer {
+// 	//position: absolute;
+// 	width: 100%;
+// 	bottom: 0;
+// 	left: 0;
+// 	border-top: 1px solid $theme-border-color;
+// 	background: $theme-bg-light;
+// 	.app-nav-footer {
+// 		margin-bottom: 0;
+// 	}
+
+// }
+
+
+// // Large devices (desktops, less than 1200px)
+// @media (max-width: 1199.98px) {
+
+// 	.app-sidepanel {
+// 		@include transition (all 0.4s ease-in-out);
+// 		left: -400px; //value >= 250px (sidepanel width + close button width)
+// 		&.sidepanel-visible {
+// 			display: block;
+// 		}
+// 	}
+//     .sidepanel-visible .sidepanel-close {
+// 	    display: inline-block; //prevent showing the panel close button in xl screen
+//     }
+// 	.sidepanel-visible .sidepanel-drop {
+// 		position: fixed;
+// 		display: block;
+// 		min-height: 100vh;
+// 		height: 100%;
+// 		width: 100%;
+// 		min-width: 100vw;
+// 		left: 0;
+// 		top: 0;
+// 		background: rgba(0, 0, 0, 0.35);
+
+// 	}
+// }
+
+// // X-Large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) {
+// 	.app-wrapper {
+// 		margin-left: 250px;
+// 	}
+
+// }

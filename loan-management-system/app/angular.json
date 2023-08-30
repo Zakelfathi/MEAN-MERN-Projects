@@ -99,7 +99,7 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": ["./node_modules/sass-loader/dist/cjs.js"]
           }
         }
       }
