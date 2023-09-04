@@ -1,4 +1,10 @@
 # jobsAPI Project
+## Demo 
+
+![demo](./Assets/demo-JobsAPI.gif)
+
+![demo](./Assets/demo-JobsAPIfront.gif)
+
 
 Welcome to the README for the **jobsAPI** project, which consists of both frontend and backend components. This project enables you to manage job-related information through a user-friendly interface. This document will guide you through the setup, installation, and usage of both the frontend and backend.
 
